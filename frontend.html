@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhupendra | Portfolio</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <div class="logo">Bhupendra<span>.</span></div>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home">
+      <section class="hero">
+        <div class="hero-left">
+          <p class="hello">Hello, It's Me</p>
+          <h1>Bhupendra Patil</h1>
+          <h2>And I'm a <span>Data Analyst</span></h2>
+
+          <p class="desc">
+            A passionate Data Science & AI student with a strong foundation in
+            Python, statistics, and machine learning. I love transforming raw
+            data into meaningful insights and building intelligent solutions
+            that solve real-world problems.
+          </p>
+
+          <!-- SOCIAL ICONS -->
+          <div class="socials">
+            <a
+              href="https://www.linkedin.com/in/bhupendra-patil-3858a22a8/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/patil939977" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://x.com/bhupendra917195" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <a class="btn" href="Bhupendra_Cv.pdf" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-right">
+          <div class="profile-wrapper">
+            <span class="rotating-ring"></span>
+
+            <div class="profile-image">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="profile-scope">
+            <div class="ring ring-dotted"></div>
+            <div class="ring ring-solid"></div>
+
+            <div class="profile-circle">
+              <img src="PPPGGG.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- HERO END -->
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+
+    <section id="about">
+      <section class="about-section reveal">
+        <div class="about-container">
+          <!-- LEFT IMAGE -->
+          <div class="about-image">
+            <img src="Photo.jpeg" alt="Bhupendra" />
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="about-content">
+            <h2>About Me</h2>
+            <h4>Data Scientist & AI Enthusiast</h4>
+
+            <p>
+              Welcome to my data-driven world! I'm Bhupendra Patil, a final-year
+              Artificial Intelligence & Data Science student at Sagar Institute
+              of Research & Technology. I specialize in data analysis, machine
+              learning, and building predictive models. With a strong interest
+              in analytics and problem-solving, I enjoy exploring data patterns,
+              creating dashboards, and developing intelligent systems that
+              support better decision-making.
+            </p>
+
+            <a href="#skills" class="about-btn">
+              View My Skills <span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        const reveals = document.querySelectorAll(".reveal");
+
+        window.addEventListener("scroll", () => {
+          reveals.forEach((el) => {
+            const top = el.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (top < windowHeight - 100) {
+              el.classList.add("active");
+            }
+          });
+        });
+      </script>
+
+      <!--================= Skills section ============================== -->
+
+      <section class="skills-section" id="skills">
+        <div class="container">
+          <!-- Badge -->
+          <div class="skills-badge">⭐ 2025 Ready Stack</div>
+
+          <!-- Heading -->
+          <h2 class="skills-title">Skills & <span>Technologies</span></h2>
+
+          <p class="skills-subtitle">
+            Enterprise-grade tools and technologies I use to build intelligent
+            data solutions
+          </p>
+
+          <!-- Cards -->
+
+          <div class="skills-grid">
+            <div class="skill-card" data-skill="core">
+              <div class="icon">⟨⟩</div>
+              <h3>Core Programming & Data</h3>
+              <p>Foundational programming and data handling skills.</p>
+            </div>
+
+            <div class="skill-card" data-skill="analysis">
+              <div class="icon">📊</div>
+              <h3>Data Analysis & Visualization</h3>
+              <p>Transform raw data into visual and meaningful insights.</p>
+            </div>
+
+            <div class="skill-card" data-skill="ml">
+              <div class="icon">🧠</div>
+              <h3>Machine Learning & AI</h3>
+              <p>Build predictive models and intelligent systems.</p>
+            </div>
+
+            <div class="skill-card" data-skill="genai">
+              <div class="icon">✨</div>
+              <h3>Generative AI & LLMs</h3>
+              <p>Next-gen AI with language models and agents.</p>
+            </div>
+
+            <div class="skill-card" data-skill="mlops">
+              <div class="icon">⚙️</div>
+              <h3>MLOps & Deployment</h3>
+              <p>Production-ready ML pipelines and deployment.</p>
+            </div>
+
+            <div class="skill-card" data-skill="cloud">
+              <div class="icon">☁️</div>
+              <h3>Cloud & Tools</h3>
+              <p>Version control and cloud infrastructure development tools.</p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+
+          <div class="skills-modal" id="skillsModal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3 id="modalTitle"></h3>
+              <ul id="skillsList"></ul>
+            </div>
+          </div>
+
+          <div class="projects-cta">
+            <a href="#projects" class="glow-btn">
+              View My Projects
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <script>
+          document
+            .querySelector(".projects-btn")
+            .addEventListener("click", function (e) {
+              e.preventDefault();
+              document.querySelector("#projects").scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            });
+        </script>
+      </section>
+
+      <section id="services">
+        <section class="services-section">
+          <div class="container">
+            <div class="services-header fade-up">
+              <h2 class="services-title">Our <span>Services</span></h2>
+              <p class="services-subtitle">
+                Transforming data into actionable insights and intelligent
+                solutions
+              </p>
+            </div>
+
+            <div class="services-grid">
+              <div class="service-card fade-up">
+                <div class="icon">📊</div>
+                <h3>Data Analysis</h3>
+                <p>
+                  Turning raw data into actionable insights using Python, SQL,
+                  and visualization tools. From exploratory analysis to business
+                  reporting, uncovering meaningful patterns.
+                </p>
+              </div>
+
+              <div class="service-card fade-up">
+                <div class="icon">🧠</div>
+                <h3>Machine Learning</h3>
+                <p>
+                  Building predictive and classification models using supervised
+                  and unsupervised learning techniques with focus on accuracy
+                  and real-world usability.
+                </p>
+              </div>
+
+              <div class="service-card fade-up">
+                <div class="icon">📈</div>
+                <h3>Data Visualization & Dashboards</h3>
+                <p>
+                  Designing interactive dashboards using Power BI, Tableau, and
+                  Python libraries to communicate insights clearly and
+                  effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <section class="projects-section">
+            <div class="projects-header">
+              <h2>Latest <span>Projects</span></h2>
+              <p>
+                Explore my data science projects and machine learning solutions
+              </p>
+            </div>
+
+            <div class="projects-grid">
+              <!-- Project Card -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="Sales analysis.avif" alt="Sales Data Analysis" />
+                  <div class="project-overlay">
+                    <button class="view-btn">View Details →</button>
+                  </div>
+                  <span class="hover-bar"></span>
+                </div>
+
+                <div class="project-content">
+                  <h3>Sales Data Analysis</h3>
+                  <p>
+                    Analyze sales data to identify trends and improve business
+                    decisions.
+                  </p>
+
+                  <div class="tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="Student.webp" alt="Student Performance Analysis" />
+                  <div class="project-overlay">
+                    <button class="view-btn">View Details →</button>
+                  </div>
+                  <span class="hover-bar"></span>
+                </div>
+
+                <div class="project-content">
+                  <h3>Student Performance Analysis</h3>
+                  <p>Analyze factors affecting student academic performance.</p>
+
+                  <div class="tags">
+                    <span>Python</span>
+                    <span>Excel</span>
+                    <span>Power BI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="contact-section" id="contact">
+            <div class="contact-header">
+              <h2>Contact <span>Me</span></h2>
+              <p>Let's connect and build data-driven solutions together</p>
+            </div>
+
+            <div class="contact-container">
+              <!-- LEFT -->
+              <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>
+                  Have a project in mind or want to discuss data science
+                  opportunities? Feel free to reach out. I'm always excited to
+                  collaborate.
+                </p>
+
+                <div class="info-card">
+                  <span class="icon">✉</span>
+                  <div>
+                    <small>Email</small>
+                    <strong>akashkexaa@gmail.com</strong>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <span class="icon">📍</span>
+                  <div>
+                    <small>Location</small>
+                    <strong>Bhopal, India, 462010</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RIGHT -->
+              <form class="contact-form" id="contactForm">
+                <label>Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+
+                <label>Your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+
+                <label>Your Message</label>
+                <textarea
+                  name="message"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+
+                <button type="submit">✈ Send Message</button>
+              </form>
+            </div>
+          </section>
+          <footer class="footer">
+            <h2 class="footer-name">Bhupendra<span>.</span></h2>
+
+            <div class="footer-icons">
+              <a
+                href="linkedin.com/in/bhupendra-patil-3858a22a8"
+                target="_blank"
+                class="icon linkedin"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="https://github.com/patil939977"
+                target="_blank"
+                class="icon github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://x.com/bhupendra917195"
+                target="_blank"
+                class="icon twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+
+            <p class="footer-text">
+              Designed & Built by <span>Bhupendra Patil</span>
+            </p>
+            <p class="footer-sub">Made with ❤️ Data Science Portfolio</p>
+            <p class="footer-copy">© 2026 All Rights Reserved</p>
+          </footer>
+        </section>
+      </section>
+    </section>
+    <div class="cursor-dot"></div>
+  </body>
+</html>
+
+<script>
+  const cursor = document.querySelector(".cursor-dot");
+
+  let mouseX = 0,
+    mouseY = 0;
+  let currentX = 0,
+    currentY = 0;
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function smoothCursor() {
+    currentX += (mouseX - currentX) * 0.15;
+    currentY += (mouseY - currentY) * 0.15;
+
+    cursor.style.transform = `translate(${currentX}px, ${currentY}px)`;
+
+    requestAnimationFrame(smoothCursor);
+  }
+
+  smoothCursor();
+</script>
